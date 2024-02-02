@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/gagarin.css">
+    <title>Космос</title>
+</head>
+<body>
+    <script>
+        function Gagarin(){
+            let name = document.Gagarin.a.value;
+            let answer=document.getElementById("answer2");
+            let lowCaseName = name.toLowerCase(); 
+        if (lowCaseName == 'юрій гагарін'||lowCaseName == 'юрій'||lowCaseName == 'yuriy'||lowCaseName == 'yuriy gagarin'){
+            string='Правильно. Його звати '+name;
+        } else{
+            string='На жаль, Ви помилились. Його звати Юрій Гагарін.';
+        }
+        answer.innerHTML = string;
+        }
+        
+            </script>
+            
+           <center> <div >
+            
+        
+                <p style="font-weight: 900 ;">Запитання</p> 
+              <p>Як звати людину, яка перша полетіла у космос?</p>
+                <form name="Gagarin" action="javascript:Gagarin()">
+                    Введіть  відповідь:<input class="side" name="a" type="text" value="" size="4"><br>
+                    <button>
+                        Яка відповідь?
+                      </button>
+                      
+                </form>
+                <span id="answer2"></span><br/>
+             
+            </div></center>
+</body>
+</html>
